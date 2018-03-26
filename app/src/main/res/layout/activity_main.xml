@@ -10,13 +10,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
 
         <!-- Question 1 -->
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            style="@style/QuestionLayout">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -24,19 +23,13 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="1)"
-                    android:textColor="@android:color/black"
-                    android:textSize="16sp"/>
+                    style="@style/QuestionNumber"
+                    android:text="1)" />
 
                 <TextView
+                    style="@style/QuestionText"
                     android:id="@+id/question1_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="What is the tallest building in Seattle?"
-                    android:textColor="@android:color/black"
-                    android:textSize="16sp"/>
+                    android:text="What is the tallest building in Seattle?"/>
 
             </LinearLayout>
 
@@ -46,27 +39,23 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
+                    style="@style/Answers"
                     android:id="@+id/answer1a"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="Seattle Municipal Tower" />
 
                 <RadioButton
+                    style="@style/Answers"
                     android:id="@+id/answer1b"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="The Space Needle" />
 
                 <RadioButton
+                    style="@style/Answers"
                     android:id="@+id/answer1c"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="The Columbia Center" />
 
                 <RadioButton
+                    style="@style/Answers"
                     android:id="@+id/answer1d"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="Safeco Plaza" />
 
             </RadioGroup>
@@ -74,9 +63,7 @@
 
         <!-- Question 2 -->
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            style="@style/QuestionLayout">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -84,19 +71,13 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="2)"
-                    android:textColor="@android:color/black"
-                    android:textSize="16sp"/>
+                    style="@style/QuestionNumber"
+                    android:text="2)" />
 
                 <TextView
+                    style="@style/QuestionText"
                     android:id="@+id/question2_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="What is the body of water Seattle surrounds?"
-                    android:textColor="@android:color/black"
-                    android:textSize="16sp"/>
+                    android:text="What is the body of water Seattle surrounds?"/>
 
             </LinearLayout>
 
@@ -106,27 +87,23 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
+                    style="@style/Answers"
                     android:id="@+id/answer2a"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="Puget Sound" />
 
                 <RadioButton
+                    style="@style/Answers"
                     android:id="@+id/answer2b"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="Duwamish Bay" />
 
                 <RadioButton
+                    style="@style/Answers"
                     android:id="@+id/answer2c"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="Pacific Ocean" />
 
                 <RadioButton
+                    style="@style/Answers"
                     android:id="@+id/answer2d"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="Coffee Bay" />
 
             </RadioGroup>
@@ -134,9 +111,7 @@
 
         <!-- Question 3 -->
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            style="@style/QuestionLayout">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -144,19 +119,13 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="3)"
-                    android:textColor="@android:color/black"
-                    android:textSize="16sp"/>
+                    style="@style/QuestionNumber"
+                    android:text="3)" />
 
                 <TextView
+                    style="@style/QuestionText"
                     android:id="@+id/question3_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Which teams plays for the University of Washington?"
-                    android:textColor="@android:color/black"
-                    android:textSize="16sp"/>
+                    android:text="Which teams plays for the University of Washington?"/>
 
             </LinearLayout>
 
@@ -166,27 +135,23 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
+                    style="@style/Answers"
                     android:id="@+id/answe3a"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="The Vikings" />
 
                 <RadioButton
+                    style="@style/Answers"
                     android:id="@+id/answer3b"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="The Huskies" />
 
                 <RadioButton
+                    style="@style/Answers"
                     android:id="@+id/answer3c"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="The Hipsters" />
 
                 <RadioButton
+                    style="@style/Answers"
                     android:id="@+id/answer3d"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="The Cougars" />
 
             </RadioGroup>
@@ -195,9 +160,7 @@
 
         <!-- Question 4 -->
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            style="@style/QuestionLayout">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -205,19 +168,13 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="4)"
-                    android:textColor="@android:color/black"
-                    android:textSize="16sp"/>
+                    style="@style/QuestionNumber"
+                    android:text="4)" />
 
                 <TextView
+                    style="@style/QuestionText"
                     android:id="@+id/question4_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Which beach is the most popular in West Seattle?"
-                    android:textColor="@android:color/black"
-                    android:textSize="16sp"/>
+                    android:text="Which beach is the most popular in West Seattle?" />
 
             </LinearLayout>
 
@@ -227,27 +184,23 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
+                    style="@style/Answers"
                     android:id="@+id/answer4a"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="Alki Beach" />
 
                 <RadioButton
+                    style="@style/Answers"
                     android:id="@+id/answer4b"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="Ranier Beach" />
 
                 <RadioButton
+                    style="@style/Answers"
                     android:id="@+id/answer4c"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="Lincoln Park" />
 
                 <RadioButton
+                    style="@style/Answers"
                     android:id="@+id/answer4d"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="Lowman Beach" />
 
             </RadioGroup>
@@ -255,9 +208,7 @@
 
         <!-- Question 5 -->
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            style="@style/QuestionLayout">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -265,19 +216,13 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="5)"
-                    android:textColor="@android:color/black"
-                    android:textSize="16sp"/>
+                    style="@style/QuestionNumber"
+                    android:text="5)"/>
 
                 <TextView
+                    style="@style/QuestionText"
                     android:id="@+id/question5_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Which tech company does NOT operate in the greater Seattle Area?"
-                    android:textColor="@android:color/black"
-                    android:textSize="16sp"/>
+                    android:text="Which tech company does NOT operate in the greater Seattle Area?" />
 
             </LinearLayout>
 
@@ -287,27 +232,23 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
+                    style="@style/Answers"
                     android:id="@+id/answer5a"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="Nintendo" />
 
                 <RadioButton
+                    style="@style/Answers"
                     android:id="@+id/answer5b"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="Apple" />
 
                 <RadioButton
+                    style="@style/Answers"
                     android:id="@+id/answer5c"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="Valve" />
 
                 <RadioButton
+                    style="@style/Answers"
                     android:id="@+id/answer5d"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="Microsoft" />
 
             </RadioGroup>
@@ -317,6 +258,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
             android:text="Submit"
             android:layout_gravity="center"
             android:onClick="checkAnswers"/>
