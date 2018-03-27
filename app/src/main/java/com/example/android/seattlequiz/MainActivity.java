@@ -9,8 +9,6 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.android.seattlequiz.Question;
-
 import java.util.Random;
 
 
@@ -246,6 +244,9 @@ public class MainActivity extends AppCompatActivity {
         allCards = new QuestionCard[] {QC1, QC2, QC3, QC4, QC5};
     }
 
+    /**
+     * Initializes the attributes of the views
+     */
     private void initViewAttributes()
     {
         for(int i = 0; i < allCards.length; i++)
