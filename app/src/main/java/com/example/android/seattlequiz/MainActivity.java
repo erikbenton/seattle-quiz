@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.android.seattlequiz.Question;
@@ -19,6 +20,33 @@ public class MainActivity extends AppCompatActivity {
     RadioGroup Q4;
     RadioGroup Q5;
     RadioGroup[] Qs;
+
+    TextView Q1Title;
+    TextView Q2Title;
+    TextView Q3Title;
+    TextView Q4Title;
+    TextView Q5Title;
+
+    RadioButton Q11Button;
+    RadioButton Q12Button;
+    RadioButton Q13Button;
+    RadioButton Q14Button;
+    RadioButton Q21Button;
+    RadioButton Q22Button;
+    RadioButton Q23Button;
+    RadioButton Q24Button;
+    RadioButton Q31Button;
+    RadioButton Q32Button;
+    RadioButton Q33Button;
+    RadioButton Q34Button;
+    RadioButton Q41Button;
+    RadioButton Q42Button;
+    RadioButton Q43Button;
+    RadioButton Q44Button;
+    RadioButton Q51Button;
+    RadioButton Q52Button;
+    RadioButton Q53Button;
+    RadioButton Q54Button;
 
     Question q1;
     Question q2;
@@ -108,6 +136,11 @@ public class MainActivity extends AppCompatActivity {
         Qs = new RadioGroup[] {Q1, Q2, Q3, Q4, Q5};
     }
 
+    private void randomizeQuestions()
+    {
+
+    }
+
     /**
      * This checks the submitted answers for correctness
      * @param view
@@ -119,24 +152,35 @@ public class MainActivity extends AppCompatActivity {
         for(int i = 0; i < Qs.length; i++)
         {
             RadioButton button = findViewById(Qs[i].getCheckedRadioButtonId());
-            String answer = button.getText().toString();
 
-            // If the answer matches any of the actual answers
-            // then increment the score
-            if(answer.equals(answer1)
-               || answer.equals(answer2)
-               || answer.equals(answer3)
-               || answer.equals(answer4)
-               || answer.equals(answer5))
+            if(button != null)
             {
-                score++;
-            }
+                String answer = button.getText().toString();
 
+                // If the answer matches any of the actual answers
+                // then increment the score
+                if(answer.equals(answer1)
+                        || answer.equals(answer2)
+                        || answer.equals(answer3)
+                        || answer.equals(answer4)
+                        || answer.equals(answer5))
+                {
+                    score++;
+                }
+            }
         }
 
         // Make a toast to display their score
         displayScore(score);
 
+    }
+
+    public void resetAnswers(View view)
+    {
+        for(int i = 0; i < Qs.length; i++)
+        {
+            Qs[i].clearCheck();
+        }
     }
 
     /**
